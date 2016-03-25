@@ -85,7 +85,6 @@ print textString2
 print "Fig. 3 Latitude vs DO"
 print textString3
 
-
 fig, (ax1,ax2,ax3) = plt.subplots(3,1)
 fig.subplots_adjust(hspace=.75)
 
@@ -96,7 +95,7 @@ ax1.set_xlim([0,47])
 ax1.set_title('Geometric Mean Regression of nitrate and oxygen',size=13)
 ax1.set_ylabel('Dissolved Oxygen\n[$\mu$mol/kg]',size=13)
 ax1.set_xlabel('Nitrate, [$\mu$mol/kg]',size=13)
-# ax1.text(ax1.get_xlim()[1]*1.01 ,ax1.get_ylim()[1]*.5,textString1,size=14)
+# ax1.figtext(1.1 ,.5,textString1,size=14)
 
 
 ax2.plot(lat_subset,tmp_subset,'.')
